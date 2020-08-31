@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang=it>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="base.css">
+    <title>Lezione 4</title>
+  </head>
+  <body>
+<h1>Le immagini - Parte 2</h1>
+<p>Spesso alle immagini viene associata una didascalia. <br>
+  In html5 è possibile contenere sia l'immagine, sia la didascalia cosi:</p>
+  <!-- è possibile utilizzare il tag <figure></figure> per avere un format adatto ad un'immagine seguita da una didascalia. -->
+  <figure>
+    <img src="shr.jpg" alt="Il deserto del sahara">
+  <br>
+  <figcaption>
+Il più vasto deserto caldo della terra con una superficie di 9 milioni di chilometri. <br>
+Attraversato dal tropico del cancro, si trova nell'Africa settentrionale
+  </figcaption>
+  </figure>
+  <!-- Ricordarsi semppre che in un tag img vanno sempre specificare un attributo src per indicare l'origine dell'immagine e un attributo alt per descrivere
+  il contenuto dell'immagine -->
+
+<h1>Le tabelle</h1>
+<h2>Tabelle semplici</h2>
+<!-- Un pò come per la lista, per creare una tabella si utilizza l'elemento <table> -->
+<table>
+  <tr>
+    <!-- Questo tag <tr> definisce l'apertura di una riga (table row), esso è seguito da uno o più elementi <td> (table data) -->
+    <td>11</td>
+    <td>10</td>
+    <td>24</td>
+    <td>36</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>14</td>
+      <td>61</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>22</td>
+      <td>35</td>
+      <td>88</td>
+    </tr>
+    </table>
+<h2>Tabelle con le intestazioni</h2>
+<table>
+  <!-- Altro tag importante per le tabelle è quello che definisce l'intestazione di quest'ultima <th> (tag heading) -->
+<tr>
+  <th></th> <!-- Questo serve per lasciare uno spazio vuoti nella prima cella -->
+  <th scope="col">Lunedi</th>
+  <th scope="col">Martedi</th>
+  <th scope="col">Mercoledi</th>
+  <th scope="col">Giovedi</th>
+  <th scope="col">Venerdi</th>
+  <th scope="col">Sabato</th>
+  <th scope="col">Domenica</th>
+  </tr>
+  <!-- Definisco altre due righe -->
+  <!-- Riga visite, che comprende sia il th che definisce le visite giornaliere, sia i td che sono i dati dei vari giorni -->
+  <tr>
+    <th scope="row">Visite giornaliere:</th>
+    <td>23</td>
+    <td>43</td>
+    <td>22</td>
+    <td>35</td>
+    <td>87</td>
+    <td>32</td>
+    <td>11</td>
+  </tr>
+  <!-- Riga Incassi -->
+  <tr>
+    <th scope="row">Incassi totali:</th>
+    <td>230 &euro;</td>
+    <td>430 &euro;</td>
+    <td>220 &euro;</td>
+    <td>350 &euro;</td>
+    <td>870 &euro;</td>
+    <td>320 &euro;</td>
+    <td>110 &euro;</td>
+  </tr>
+</table>
+<h2>Tabelle con celle estese</h2>
+<!-- Tavolta è necessario che gli elementi di una tabella si estendano su più colonne, in questo caso si dovrà usare l'attributo colspan che può essere utilizzato
+sia con <td> che con <th>. -->
+<h3>Tabella con rowspan</h3>
+<!-- Tabella con il rowspan -->
+<table>
+  <tr>
+    <!-- Non dimenticare questo th vuoto sotto, permette di creare una tabella ordinata con le intestazioni ordinate in base ai dati -->
+    <th></th>
+    <th>Italia 1</th>
+    <th>Canale 5</th>
+    <th>Rete 4</th>
+  </tr>
+  <tr>
+    <th>17-18</th>
+    <td rowspan="2">Film</td>
+    <td>Notiziario</td>
+    <td>Documentario</td>
+  </tr>
+  <tr>
+    <th>18-19</th>
+    <td>Sport</td>
+    <td>ProgrammaTV</td>
+  </tr>
+</table>
+<h3>Tabella con colspan</h3>
+<!-- Tabella con il colspan -->
+<table>
+  <tr>
+    <th></th>
+    <th>9:00</th>
+    <th>10:00</th>
+    <th>11:00</th>
+    <th>12:00</th>
+  </tr>
+  <tr>
+    <th>Mercoledi</th>
+    <td colspan="2">Studiare</td>
+    <td>Palestra</td>
+    <td>Tempo Libero</td>
+  </tr>
+  <tr>
+    <th>Giovedi</th>
+    <td colspan="3">Fuori città</td>
+    <td>Riposo</td>
+  </tr>
+</table>
+<!-- Quindi abbiamo due attributi importanti per l'estensione di una tabella:
+- colspan = Definisce il numero di colonne che una cella utilizza.
+- rowspan = Definisce il numero di righe che una cella utilizza. -->
+<h2>Tabelle molto lunghe</h2>
+<!-- Per delle tabelle che hanno molti dati si utilizzano altri tag per permettere l'inserimento dei dati con un format migliore -->
+<table>
+  <thead>
+    <!-- Qui dentro vanno tutte le intestazioni di colonna della tabella -->
+    <tr>
+    <th>Data</th>
+    <th>Entrate</th>
+    <th>Spese</th>
+      </tr>
+  </thead>
+  <tbody>
+    <!-- Qui vanno tutti i dati della tabella, comprese le intestazioni di riga -->
+  <tr>
+    <th>1 Gennaio</th>
+    <td>250 &euro;</td>
+    <td>36 &euro;</td>
+  </tr>
+  <tr>
+    <th>2 Gennaio</th>
+    <td>285 &euro;</td>
+    <td>48 &euro;</td>
+  </tr>
+  <tr>
+    <th>3 Gennaio</th>
+    <td>260 &euro;</td>
+    <td>42 &euro;</td>
+    </tr>
+    <tr>
+      <th>4 Gennaio</th>
+      <td>290 &euro;</td>
+      <td>38 &euro;</td>
+    </tr>
+    <tr>
+      <th>5 Gennaio</th>
+      <td>390 &euro;</td>
+      <td>48 &euro;</td>
+    </tr>
+    <tr>
+      <th>6 Gennaio</th>
+      <td>490 &euro;</td>
+      <td>58 &euro;</td>
+    </tr>
+    <tr>
+      <th>7 Gennaio</th>
+      <td>333 &euro;</td>
+      <td>21 &euro;</td>
+    </tr>
+    <tr>
+      <th>8 Gennaio</th>
+      <td>480 &euro;</td>
+      <td>11 &euro;</td>
+    </tr>
+    <tr>
+      <th>9 Gennaio</th>
+      <td>314 &euro;</td>
+      <td>15 &euro;</td>
+    </tr>
+    <tr>
+      <th>10 Gennaio</th>
+      <td>465 &euro;</td>
+      <td>88 &euro;</td>
+    </tr>
+    <tr>
+      <th>11 Gennaio</th>
+      <td>110 &euro;</td>
+      <td>81 &euro;</td>
+    </tr>
+    <tr>
+      <th>12 Gennaio</th>
+      <td>120 &euro;</td>
+      <td>16 &euro;</td>
+    </tr>
+    <tr>
+      <th>13 Gennaio</th>
+      <td>500 &euro;</td>
+      <td>70 &euro;</td>
+    </tr>
+    <tr>
+      <th>14 Gennaio</th>
+      <td>860 &euro;</td>
+      <td>75 &euro;</td>
+    </tr>
+    <tr>
+      <th>15 Gennaio</th>
+      <td>588 &euro;</td>
+      <td>83 &euro;</td>
+    </tr>
+    <tr>
+      <th>4 Gennaio</th>
+      <td>120 &euro;</td>
+      <td>12 &euro;</td>
+    </tr>
+    <tr>
+      <th>16 Gennaio</th>
+      <td>532 &euro;</td>
+      <td>77 &euro;</td>
+    </tr>
+    <tr>
+      <th>17 Gennaio</th>
+      <td>443 &euro;</td>
+      <td>66 &euro;</td>
+    </tr>
+    <tr>
+      <th>18 Gennaio</th>
+      <td>232 &euro;</td>
+      <td>55 &euro;</td>
+    </tr>
+    <tr>
+      <th>19 Gennaio</th>
+      <td>767 &euro;</td>
+      <td>43 &euro;</td>
+    </tr>
+    <tr>
+      <th>20 Gennaio</th>
+      <td>562 &euro;</td>
+      <td>18 &euro;</td>
+    </tr>
+  </tbody>
+  <!-- Qui vanno i risultati della tabella -->
+  <tfoot>
+    <tr>
+      <td></td>
+      <td>7824</td>
+      <td>1241</td>
+    </tr>
+  </tfoot>
+</table>
+
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lezione 3</title>
+    <link rel="stylesheet" href="stile.css">
+  </head>
+  <body>
+    <h1>Lezione 3</h1>
+    <h2>Testo evidenziato e Testo sottolineato</h2>
+    <!-- è possibile evidenziare il testo con il seguente tag -->
+    <p><mark>Vedo una vecchia signora, coi capelli ritinti, tutti unti non si sa di qual orribile manteca, e poi tutta goffamente imbellettata e parata d'abiti giovanili.</mark></p>
+    <!-- Per sottolinearlo invece... -->
+    <p><u>C'era una volta una zanzara che rompeva il caspio</u><p>
+      <hr>
+    <h2>I link</h2>
+<!-- I link ipertestuali permettono, tramite un Url (Uniform Resource Locator) di... vabbè non c'è bisogno che te lo spiego. Si usa il tag <a> che significa anchor,
+ovvero ancoraggio, mentre come attributo useremo href che significa hypertext refer, non è un tag vuoto -->
+<a href="http://www.google.it">Google</a>
+<h3>Due distinzioni importanti sull'Url</h3>
+<p>L'Url può essere: <br> Assoluto: <a href="http://www.youtube.com">Come Questo</a> <br> Relativo: <a href="img/paginap.html">Come questo</a></p>
+<!-- La differenza tra questi due url sta nel fatto che uno (Assoluto) è lungo e complesso ed indirizza ad una pagina esterna alla directory di riferimento del sito,
+l'altro (relativo) invece risulta più semplice e rimanda ad una pagina interna al sito -->
+<ul>
+  <li>Stessa cartella: "pagina.html"</li> <!-- Percorso per un file nella stessa cartella -->
+  <li>Cartella Figlia: "cartella/pagina.html"</li> <!-- Percorso verso una sottocartella -->
+  <li>Cartella Nipote: "cartella/sottocartella/pagina.html"</li> <!-- Percorso verso una cartella di una sottocartella -->
+  <li>Cartella Genitore: "../pagina.html"</li> <!-- Percorso verso una cartella prima -->
+  <li>Cartella Nonna: "../../pagina.html"</li> <!-- Percorso verso due cartelle prima -->
+</ul>
+<a href="img/peppino.html">Clicca qui</a>
+<h3>Altri tipi di link</h3>
+<p>Esistono anche link che permettono di far aprire direttamente il programma di posta elettronica <br> Tipo questo: <a href="mailto:marcooliveri94@gmail.com">Mandami una mail</a></p>
+<p>Oppure esistono link che permettono di collegarsi ad un punto preciso della pagina <br> tipo questo: <a href="#bot">Vai a fine pagina</a> </p>
+<!-- Per creare un link simile basta inserire un id, in uno degli elementi della pagina (di solito sono preferibili i titoli) e successivamente inserire il tag <a>
+dove si desidera inserendo  come link l'id che abbiamo creato preceduto da un cancelletto -->
+<p>Esistono anche link che permettono di collegarsi ad un punto preciso di un'altra pagina, <a href="https://it.wikipedia.org/wiki/Seconda_guerra_mondiale#Obiettivo_Caucaso">come questo link</a></p>
+<!-- Per avere un link simile bisogna inserire il link alla pagina seguito da un cancelletto e dall'id del punto in cui si vuole andare -->
+<hr>
+<h2>Le immagini</h2>
+<!-- Per inserire delle immagini basta semplicemente utilizzare il tag <img>. Bisogna ricordarsi comunque che questo è un tag vuoto, non richiede una chiusura ma a fine tag bisogna scrivere questo /> -->
+<img src="img/cat1.jpeg" title="Gatto numero 1" alt="Gatto-1" />
+<p>Se non diamo le proporzioni all'immagine, il browser prenderà quelle originali, quindi per dare le dimensioni si usano gli attributi:</p>
+<img src="img/cat1.jpeg" title="Gatto numero 1" alt="Gatto-1" width="300px" height="200px" />
+<!-- Le immagini si possono collocare ovunque, fuori un paragrafo, dentro, prima di una frase, etc. -->
+<h3>Immagini come link</h3>
+<!-- è possibile utilizzare le immagini come dei link, dove al click permettono di collegarsi. Basterà semplicemente mettere il tag <img> dentro il tag <a> -->
+<a href="http://www.google.it"><img src="img/cat3.jpg" width="300px" height="200px"></a>
+<hr>
+<h2 class=>I primi attributi</h2>
+<!-- Accenno ad alcuni attributi dei tag che abbiamo fatto -->
+<p>Gli attributi, come gli aggettivi, forniscono informazioni aggiuntive al tag<br>
+  Ne esistono molti, per ora ne elencheremo solo alcuni:
+<ul>
+  <li><b>lang</b> = Specifica il linguaggio all'interno di un paragrafo o un tag di tipo testuale</li>
+  <li><b title="Questo è l'attributo title">title</b> = Un testo che appare quando passi sopra al tag con il cursore</li>
+  <li><b>href = Indica la destinazione del link</b></li>
+  <li><b>alt = Un testo che appare quando una risorsa non è disponibile.</b></li>
+  <li><b style="color: blue;">style</b> = Contiene le info di stile per un documento o parte di esso.
+    <br>Se non si usa un documento css, si può inserire il codice css qui dentro.
+    <br> Attenzione però: deve essere breve o la pagina rallenta</li> <!-- Da approfondire -->
+  <li><b>target</b> = Specifica come il link dovrà essere aperto <ul>
+    <li><a href="paginap.html" target="_self">_self</a>  = è di default, apre la pagina nella stessa finestra</li>
+    <li><a href="paginap.html" target="_blank">_blank</a> = Apre la pagina in una nuova finestra</li>
+    <li><a href="paginap.html" target="_parent">_parent</a> = Apre il documento nella finestra in cui si trova la pagina</li>
+    <li><a href="paginap.html" target="_top">_top = Si sovrappone alla pagina</a></li>
+    </ul>
+  </li>
+  <li><b class="mario">src</b> = Indica la risorsa da cui attingere (source), come per l'immagine da prendere ad esempio</li>
+  <li><b class="mario">width</b> = Indica la larghezza di un elemento, che può essere un box, o un'immagine </li>
+  <li><b class="mario">height</b> = Indica l'altezza di un elemento, \\ </li>
+  <li><b class="mario">class</b> = è indispensabile, soprattutto per il css perchè identifica una classe di elementi (o tag) e permette quindi di usare la stessa classe su più tag</li>
+  <li><b id="bot">id</b> = Viene usato per identificare un singolo tag con appunto un id che può servive per i link, come abbiamo già visto, o per modificare il singolo tag tramite CSS</li>
+
+</p>
+  </body>
+</html>
