@@ -2,7 +2,7 @@
 <html lang="it" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Lezione 6</title>
+    <title>Lezione 6 - I moduli</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
   </head>
@@ -24,7 +24,7 @@
       <img src="palettes/palette8.jpg" alt="Palette 1">
     </div>
     <p>Per altri esempi, clicca <a href="palettes">qui</a><br>
-    Comunque online è possibile trovarne un'infinità, basta scrivere le giuste parole su google o utilizzare <a href="https://coolors.co/">Coolors</a>.
+    Comunque online è possibile trovarne un'infinità, basta scrivere le giuste parole su google o utilizzare <a href="https://coolors.co/">Coolors</a> o <a href="https://paletton.com">Paletton</a>.
   </p>
   <h2>I Moduli</h2>
   <p>La forma più diffusa di "modulo" nel web è la semplice casella di ricerca, come quella di google. <br>
@@ -100,9 +100,14 @@ una volta cliccato sul tasto --><br>
   <p>Iscriviti:</p>
   <div class="iscrizione">
   <input type="text" value="email" class="spazi"/>
-  <input type="image" src="img/bottone.png" class="spazi" />
-  </div><!-- Valgono le stesse regole che utilizziamo sul tag <img> quindi bisogna inserire 
+  <input type="image" src="img/bottone.png" class="spazi" /> <!-- Valgono le stesse regole che utilizziamo sul tag <img> quindi bisogna inserire 
   src, width ed height per regolarsi altezza e larghezza. -->
+  
+  </div>
+  <input type="hidden" src="img/bottone.png" class="spazi" />
+  <!-- Il valore hidden dell'attributo type permette di nascondere l'elemento input a cui viene contrassegnato.
+  è utile per nascondere un pulsante invisibile che magari, tramite altro codice è possibile far visualizzare solo ad utenti loggati, oppure tramite codice javascript
+  farlo apparire al verificarsi di un evento x.-->
 </form>
 <h4>Il tag &lt;textarea&gt;</h4>
 <form action="http://www.esempio.com/commento.php" method="post">
@@ -133,5 +138,19 @@ onblur: l'esatto contrario di onfocus ovvero "quando non è preso in considerazi
   </select>
 </p>
     </form>
+    <h4>Altro modo per creare i pulsanti</h4>
+    <p>Esiste un altro tag per creare i pulsanti ed è il tag &lt;button&gt;. <br>
+    &#201; stato introdotto per offrire un maggiore controllo sull'aspetto dei pulsanti. <br>
+    Infatti si possono combinare testi ed immagini fra il tag di apertura ed il tag di chiusura</p>
+    
+    <form id="modulo1" method="POST">
+    Email: <input type="text" name="email" id="email" /> <br>
+    Nome: <input type="text" name="Nome" id="nome" /> <br>
+    Cognome: <input type="text" name="Cognome" id="cognome" /> <br>
+    Compleanno: <input type="date" id="compleanno" name="compleanno"> 
+    </form>
+    <button type="submit" form="modulo1" formmethod="POST" formtarget="_blank" formaction="dati.php">Invia il modulo</button>
+    <!--Le differenze tra il tag input e il tag button sta nella semplicità di quest'ultimo e anche nella possibilità di poterlo inserire fuori dal form e non per forza al suo interno.
+    Naturalmente, se viene inserito all'esterno del form, si dovrà richiamare quest'ultimo tramite l'attributo form, inserendo il suo id.-->
   </body>
 </html>

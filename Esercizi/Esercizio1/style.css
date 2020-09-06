@@ -1,0 +1,35 @@
+body {
+    background-color: #000300; } 
+    h1 {
+        color: #faff00;
+        font-family: "orbitron", sans-serif;
+        text-align: center;
+    } 
+    .testo {
+        color: #ffffff;
+        text-align: center;
+    }
+    .lista{
+        color: #ffffff;   }
+    .box{
+        background-color: #ff01fb;
+        width: 200px;
+    }
+    .tabbella{
+        color: #ffffff;
+    }
+    th{
+        text-transform: uppercase;
+        border: 2px solid #ffffff;
+    }
+    tr{
+        text-align: center;
+    
+    }
+    td {
+        border: 2px solid #ffffff;
+
+    }
+    table{
+         font-family: "orbitron", sans-serif;
+    }
