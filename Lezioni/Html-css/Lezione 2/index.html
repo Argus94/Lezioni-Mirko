@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang=it>
+  <head>
+    <meta charset="utf-8">
+    <title>Lezione 2</title>
+  </head>
+  <body>
+    <!-- Questo Id="top" serve per dopo -->
+    <h1 id="top">Pedice e Apice</h1>
+    <!--Pedice-->
+    <p>
+      Formula chimica della fotosintesi: C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> <br /> Scarto: O<sub>6</sub>C<sub>2</sub>H
+    </p>
+    <!-- Linea Orizzontale -->
+    <hr />
+
+    <!--Apice-->
+    <p>
+      Numeri in potenza: 6<sup>12</sup> + 7<sup>14</sup> + 12<sup>10</sup>
+    </p>
+<h1>I contatti</h1>
+<!-- Contiene dettagli relativi al contatto dell'autore della pagina -->
+<address>
+  <p>
+    <!-- Tag di indirizzi e href di riferimento, ne parleremo meglio dopo -->
+    <a href="mailto:marcooliveri94@gmail.com">email</a>
+      <p>Via del sole, 72, Lordaeron</p>
+      </address>
+  </p>
+  <h1>Contenuto tagliato e contenuto inserito in un secondo tempo</h1>
+  <!--Testo rimosso viene considerato come un aggiornamento ed una correzione al testo -->
+  <p>Ma un giorno <del>finalmente</del> vennero a dirmi che <del>mia moglie</del> era stata assalita dalle doglie, e che corressi subito a casa. Scappai come un dàino: ma più per sfuggire a me stesso, per non rimanere neanche un minuto a tu per tu con me, a pensare che io stavo per avere un figliuolo, io, in quelle condizioni, un figliuolo!
+Appena arrivato alla porta di casa, mia suocera m’afferrò per le spalle e mi fece girar su me stesso: <br>
+<!-- Testo inserito, viene considerata come un aggiornamento al testo -->
+– <ins>Un medico! Scappa! Romilda muore!</ins>
+Viene da restare, no? a una siffatta notizia a bruciapelo. E invece, « Correte! ».</p>
+
+<h1> Contenuto non più accurato o rilevante </h1>
+<b>Popolazione italiana 2018:</b> <s>59.000.000</s> <br>
+<b>Popolazione italiana 2020:</b> 60.000.000
+
+<h1>Le liste</h1>
+<!--Le liste ordinate presentano il tag <ol>, le liste non ordinate il tag <ul>, quelle di definizione il tag <dl> -->
+<p>Possono essere di 3 tipi: Ordinate, Non  Ordinate e di definizione</p>
+<!-- Per i tag <ul> e <ol> si usa il tag <li> per elencare gli elementi della lista -->
+<h3>Lista della spesa</h3>
+<!-- Questa è una lista non ordinata, si può notare che presenta dei pallini e non dei numeri, non ha un ordine preciso -->
+<ul>
+  <li>Limoni</li>
+  <li>Mele</li>
+  <li>Biscotti</li>
+  <li>Sapone</li>
+  <li>Pasta</li>
+</ul>
+<!-- Questa è una lista ordinata, gli elementi sono disposti secondo un ordine numerico -->
+<h3>Classifica Gara</h3>
+<ol>
+  <li>Paolo</li>
+  <li>Mario</li>
+  <li>Antonio</li>
+  <li>Ambrogio</li>
+</ol>
+<h3>Termini poco conosciuti</h3>
+<!-- Questa è una lista di definizione <dl>, a differenza delle precedenti 2 non usa il tag <li> per gli elementi: utilizza <dt> per il termine e <dd> per sua la definizione -->
+<dl>
+  <dt>Sempiterno</dt>
+  <dd>Che non ha mai avuto principio né mai avrà fine; che è sempre esistito e sempre esisterà; eterno</dd>
+  <dt>Madido</dt>
+  <dd>Cosparso di gocce o goccioline di sudore, d'acqua o d'altro liquido.</dd>
+  <dt>Sagace</dt>
+  <dd>Che dimostra o denota intelligenza pronta e perspicace, acume e avvedutezza.</dd>
+</dl>
+<!-- Le liste si possono nidificare ovvero avere dei sotto elementi negli elementi principali -->
+<h3>Lista nidificata non ordinata</h3>
+<!-- La lista non ordinata presenta un <ul> dentro un elemento genitore <li> -->
+<ul>
+  <li>Maschi
+  <ol>
+  <li>Franco</li>
+  <li>Antonio</li>
+  <li>Giuseppe</li>
+</ol>
+</li>
+<li>Femmine
+  <ol>
+<li>Maria</li>
+<li>Linda</li>
+<li>Carla</li>
+</ol>
+</li>
+</ul>
+<h3>Lista nidificata Ordinata</h3>
+<!-- Per essere nidificata, la lista ordinata richiede un <ol> dentro un elemento genitore <li> della lista -->
+<ol>
+  <li>Corsa
+    <ol>
+      <li>Mario</li>
+      <li>Antonio</li>
+      <li>Massimo</li>
+      <li>Oscar</li>
+    </ol>
+  </li>
+    <li>Salto in alto
+    <ol>
+      <li>Cristina</li>
+      <li>Maria</li>
+      <li>Carlo</li>
+      <li>Aldo</li>
+    </ol>
+  </li>
+  </li>
+</ol>
+<h3>I link</h3>
+<!-- I link ipertestuali permettono, tramite un Url (Uniform Resource Locator) di... vabbè non c'è bisogno che te lo spiego. Si usa il tag <a> che significa anchor,
+ovvero ancoraggio, mentre come attributo useremo href che significa hypertext refer, non è un tag vuoto -->
+<a href="http://www.google.it">Google</a>
+<h3>Due distinzioni importanti sull'Url</h3>
+<p>L'Url può essere: <br> Assoluto: <a href="http://www.youtube.com">Come Questo</a> <br> Relativo: <a href="paginap.html">Come questo</a></p>
+<!-- La differenza tra questi due url sta nel fatto che uno (Assoluto) è lungo e complesso ed indirizza ad una pagina esterna alla directory di riferimento del sito,
+l'altro (relativo) invece risulta più semplice e rimanda ad una pagina interna al sito -->
+<ul>
+  <li>Stessa cartella: "pagina.html"</li> <!-- Percorso per un file nella stessa cartella -->
+  <li>Cartella Figlia: "cartella/pagina.html"</li> <!-- Percorso verso una sottocartella -->
+  <li>Cartella Nipote: "cartella/sottocartella/pagina.html"</li> <!-- Percorso verso una cartella di una sottocartella -->
+  <li>Cartella Genitore: "../pagina.html"</li> <!-- Percorso verso una cartella prima -->
+  <li>Cartella Nonna: "../../pagina.html"</li> <!-- Percorso verso due cartelle prima -->
+</ul>
+<h3>Altri tipi di link</h3>
+<p>Esistono anche link che permettono di far aprire direttamente il programma di posta elettronica <br> Tipo questo: <a href="mailto:marcooliveri94@gmail.com">Mandami una mail</a></p>
+<p>Oppure esistono link che permettono di collegarsi ad un punto preciso della pagina <br> tipo questo: <a href="#top">Torna a inizio pagina</a> </p>
+<!-- Per creare un link simile basta inserire un id, in uno degli elementi della pagina (di solito sono preferibili i titoli) e successivamente inserire il tag <a>
+dove si desidera inserendo come link l'id che abbiamo creato preceduto da un cancelletto -->
+</html>
