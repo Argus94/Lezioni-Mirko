@@ -1,4 +1,4 @@
-L'L'esercizio presenta 3 pagine più 1 foglio di stile.
+L'esercizio presenta 3 pagine più 1 foglio di stile.
 Nel foglio di stile dovrai innanzitutto inserire i colori dello sfondo, del testo, il font-family per i vari testi etc.
 Nella cartella stile trovi i colori che dovrai utilizzare.
 I font che dovrai utilizzare sono un Anton per gli headings e un Fire sans per i testi.
