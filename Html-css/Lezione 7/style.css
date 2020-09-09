@@ -2,26 +2,74 @@
     color: #ffffff;
     font-family: 'Rubik', sans-serif;
 }
-
+.font3 {
+    color: #ffffff;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
 .font2 {
     color: #323232;
     font-family: 'Rubik', sans-serif;
+    text-align: center;
 }
+
 
 .box1 {
     background-color: #313131;
 }
 
 .box2 {
-    background-color: #4772d9;
+    background-color: rgba(71, 114, 217, 0.5);
     width: 100vw;
     position: relative;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    top: 0%;
     margin-top: 0px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 35px;
+    font-style: bold;
+    color: #ffffff;   
+}
+.box-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+}
+.card {
+    background-color: #ffffff;
+    flex-basis: 45%;
+    height: auto;
+    margin: 0, auto, auto, auto;
+    border-radius: 5%;
+    color:black;
+}
+
+.card h2 {
+margin-left: 10px;
+font-size: 15px;
+margin-top: 5px;
+}
+
+.card:hover {
+    background-color:cornflowerblue;
+    transition-duration: 1s;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.box2 .image{
+position:relative;
+width: 100vw;
+z-index: -1;
 }
 
 .box3 {
@@ -32,4 +80,6 @@
 body {
    margin: 0 !important;
     padding: 0 !important;
+    color: #ffffff;
+    font-family: 'Rubik', sans-serif;
 }
