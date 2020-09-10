@@ -14,22 +14,35 @@
 }
 
 .box2 {
+    /* Questo box mi permette di creare un overlay sull'immagine */
     background-color: rgba(69, 123, 157, 0.6);
+    /* 100vw sta per una grandezza scalare in viewport, ovvero lo schermo */
     width: 100vw;
+    /* Il posizionamento relativo sposta un elemento rispetto alla sua posizione standard nel flusso di dati, 
+    non influenza la posizione degli elementi circostanti */
     position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
     margin-top: 0px;
     text-align: center;
     font-family: 'Rubik', sans-serif;
+    /* Grandezza del font */
     font-size: 35px;
+    /* Stile del font */
     font-style: bold;
     color: #ffffff;   
 }
+/*Questa classe, con le sue proprietà, mi permette di posizionare il testo in posizione assoluta:
+Posiziona l'elemento rispetto (o sopra) al suo elemento contenitore. Viene estratto dal suo flusso standard
+ e non influenza la posizione degli elementi circostanti. */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .box-cards {
+    /* Il flex indica una visuale a griglia che si regola in base alle dimensioni dello schermo */
     display: flex;
+    /*Le varie direttive di regolazione */
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -37,8 +50,11 @@
 }
 .card {
     background-color: #f1faee;
+    /* Il flex-basis permette di definire lo spazio percentuale che un elemento occupa su ogni riga.
+    Ho dato 45% perchè così ci potranno entrare 2 elementi con uno spazio residuo del 10% */
     flex-basis: 45%;
     height: auto;
+    /*Con border-radius indico quanto arrotondati devono essere gli spigoli */
     border-radius: 10px;
     color:black;
     font-family: 'Rubik', sans-serif;
@@ -46,7 +62,10 @@
     
 }
 .card ul {
+    /*Con list-style-type: none; tolgo i punti della lista non ordinata */
     list-style-type: none;
+    /*Con il padding mi setto il lo spazio tra in contenuto interno ed il box;
+    Con il margin, invece, lo spazio tra box e contenuto esterno.*/
     padding-left: 0px;
     margin-top: 0px;
 }
@@ -59,7 +78,8 @@ margin-left: auto;
 margin-right: auto;
 margin-bottom: 2px;
 }
-
+/*Questa viene chiamata pseudo-classe, ovvero, non è una vera e propria classe poichè si mescola con alcuni
+argomenti del javascript, per quanto riguarda gli eventi. */
 .card:hover {
     background-color:#247BA0;
     transition-duration: 1s;
@@ -77,6 +97,7 @@ margin-bottom: 2px;
 .card2 h2 {
 font-size: 15px;
 margin-top: 5px;
+/* Un altro modo di settare il contenuto al centro */
 justify-content: center;
 margin-left: auto;
 margin-right: auto;
@@ -86,12 +107,6 @@ margin-bottom: 2px;
     margin: 10px;
 }
 
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 .box2 .image{
 position:relative;
 width: 100vw;
@@ -112,7 +127,11 @@ body {
 }
 .testo1 {
     margin-bottom: 0px;
+    text-align:center;
+    margin: auto;
+    /* Ricordarsi sempre di dare il margine automatico quando si vuole allineare il testo al centro */
 }
+/* Il codice quà sotto è valido solo per dispositivi con una larghezza massima di schermo di 700px */
 @media only screen and (max-width: 700px) {
     .card2 {
     background-color: #f1faee;
