@@ -50,22 +50,65 @@
 <h2>Input di testi</h2>
 <input type="text" name="Testo" maxlength="10">
 <!-- L'attributo Size è obsoleto-->
+<!-- Ricordarsi che l'attributo email identifica il dato che verrà riportato una volta inviato il modulo.-->
 </div>
 <div class="card2">
-<h2>Input di testi</h2>
-<input type="text" name="Testo" maxlength="10">
-<!-- L'attributo Size è obsoleto-->
+<h2>Input di password</h2>
+<input type="password" name="password" maxlength="10">
 </div>
 <div class="card2">
-<h2>Input di testi</h2>
-<input type="text" name="Testo" maxlength="10">
-<!-- L'attributo Size è obsoleto-->
+<h2>Input di email</h2>
+<input type="email" name="email" maxlength="20">
 </div>
 <div class="card2">
-<h2>Input di testi</h2>
-<input type="text" name="Testo" maxlength="10">
-<!-- L'attributo Size è obsoleto-->
+<h2>Input di indirizzi</h2>
+<input type="url" name="indirizzo" maxlength="20">
 </div>
-    </div>
+<div class="card2">
+<h2>Input di ricerca</h2>
+<input type="search" name="ricerca" maxlength="20">
+</div>
+<div class="card2">
+<h2>input di scelta singola</h2>
+<input type="radio" name="scelta1" checked="checked">
+<input type="radio" name="scelta2">
+<input type="radio" name="scelta3">
+<input type="radio" name="scelta4">
+</div>
+<div class="card2">
+<h2>Input di scelta multipla</h2>
+<input type="checkbox" name="scelta1" checked="checked">
+<input type="checkbox" name="scelta2">
+<input type="checkbox" name="scelta3">
+<input type="checkbox" name="scelta4">
+</div>
+<div class="card2">
+<h2>Input di indirizzi</h2>
+<input type="url" name="Testo" maxlength="10">
+</div>
+<div class="card2">
+<h2>Input di un file</h2>
+<input type="file" name="documento">
+</div>
+    <div class="card2">
+<h2>Pulsante di invio <br>del modulo</h2>
+<input type="submit" name="invio" value="Invia">
+<!--L'attributo name qui non è obbligatorio-->
+<!--L'attributo value viene utilizzato per controllare il testo nel pulsante-->
+</div>
+<div class="card2">
+<h2>Immagine come pulsante <br>di invio</h2>
+<input type="image" src="img/icon-a.png">
+</div>
+<h2 class="testo1">Etichette per i controlli del modulo</h2>
+<p class="testo1">Quando sono stati introdotti i moduli si metteva del semplice testo accanto ad ognuno di essi, come abbiamo fatto noi. <br>
+Con l'introduzione del tag &lt;label&gt; le cose sono cambiate, viene così usato per identificare ogni modulo. Rende il codice più chiaro ed è supportato
+dai programmi utilizzati da chi ha difficoltà visive. <br>
+Può essere usato in due modi:
+    <ol>
+    <li>Per racchiudere sia la descrizione testuale che l'elemento di input del modulo</li>
+    <li>Per indicare il modulo di controllo a cui fa riferimento utilizzando l'attributo for</li>
+    </ol>
+</p>
   </body>
 </html>
