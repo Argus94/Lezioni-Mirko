@@ -14,15 +14,24 @@
     Per questo motivo, quando si parla di palette colori, si intende un insieme di colori che verrà utilizzato dal web designer per un sito o una pagina (in questo caso la tela per l'artista).<br>
   Di seguito alcuni esempi di palette:</p>
   <div class="riquadro">
-      <img src="palettes/palette1.jpg" alt="Palette 1">
-      <img src="palettes/palette2.jpg" alt="Palette 1">
-      <img src="palettes/palette3.png" alt="Palette 1">
-      <img src="palettes/palette4.jpg" alt="Palette 1">
-      <img src="palettes/palette5.jpg" alt="Palette 1">
-      <img src="palettes/palette6.jpg" alt="Palette 1">
-      <img src="palettes/palette7.jpg" alt="Palette 1">
-      <img src="palettes/palette8.jpg" alt="Palette 1">
+      <img src="palettes/palette1.jpg" alt="Palette 1" id="myImg">
+      <img src="palettes/palette2.jpg" alt="Palette 2" id="myImg">
+      <img src="palettes/palette3.png" alt="Palette 3" id="myImg">
+      <img src="palettes/palette4.jpg" alt="Palette 4" id="myImg">
+      <img src="palettes/palette5.jpg" alt="Palette 5" id="myImg">
+      <img src="palettes/palette6.jpg" alt="Palette 6" id="myImg">
+      <img src="palettes/palette7.jpg" alt="Palette 7" id="myImg">
+      <img src="palettes/palette8.jpg" alt="Palette 8" id="myImg">
     </div>
+    <div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+  </div>
+
     <p>Per altri esempi, clicca <a href="palettes">qui</a><br>
     Comunque online è possibile trovarne un'infinità, basta scrivere le giuste parole su google o utilizzare <a href="https://coolors.co/">Coolors</a> o <a href="https://paletton.com">Paletton</a>.
   </p>
@@ -153,4 +162,23 @@ onblur: l'esatto contrario di onfocus ovvero "quando non è preso in considerazi
     <!--Le differenze tra il tag input e il tag button sta nella semplicità di quest'ultimo e anche nella possibilità di poterlo inserire fuori dal form e non per forza al suo interno.
     Naturalmente, se viene inserito all'esterno del form, si dovrà richiamare quest'ultimo tramite l'attributo form, inserendo il suo id.-->
   </body>
+
+  <script>// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+} </script>
 </html>
