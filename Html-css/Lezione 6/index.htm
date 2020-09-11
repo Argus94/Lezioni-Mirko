@@ -96,7 +96,7 @@ Se non si utilizza l'attributo method i dati vengono inviati di standard con il 
 però è possibile usarlo anche per inviare gli altri dati,  basta inserirlo all'interno del form per poter inviare tutto il modulo 
 una volta cliccato sul tasto --><br>
 <input type="submit" value="Carica" /> <!-- In questo caso, il value indicherà il nome del tasto -->
-
+</form>
 <p>Un esempio lo possiamo anche fare con un form che permette di inviare la propria mail, quindi ad esempio, iscriversi ad una newsletter:</p>
 <form action="http://www.esempio.com/newsletter.php">
   <p>Iscriviti alla newsletter:</p>
@@ -153,12 +153,14 @@ onblur: l'esatto contrario di onfocus ovvero "quando non è preso in considerazi
     Infatti si possono combinare testi ed immagini fra il tag di apertura ed il tag di chiusura</p>
     
     <form id="modulo1" method="POST">
-    Email: <input type="text" name="email" id="email" /> <br>
-    Nome: <input type="text" name="Nome" id="nome" /> <br>
+    <fieldset style="margin: auto; width: 200px;">
+   <label> Email: <br> <input type="text" name="email" id="email" /> </label> <br>
+    Nome: <br> <input type="text" name="Nome" id="nome" /> <br>
     Cognome: <input type="text" name="Cognome" id="cognome" /> <br>
-    Compleanno: <input type="date" id="compleanno" name="compleanno"> 
+    Compleanno: <br><input type="date" id="compleanno" name="compleanno"> 
+    </fieldset>
     </form>
-    <button type="submit" form="modulo1" formmethod="POST" formtarget="_blank" formaction="dati.php">Invia il modulo</button>
+    <button type="submit" form="modulo1, modulo2" formmethod="POST" formtarget="_blank" formaction="dati.php">Invia il modulo</button>
     <!--Le differenze tra il tag input e il tag button sta nella semplicità di quest'ultimo e anche nella possibilità di poterlo inserire fuori dal form e non per forza al suo interno.
     Naturalmente, se viene inserito all'esterno del form, si dovrà richiamare quest'ultimo tramite l'attributo form, inserendo il suo id.-->
   </body>

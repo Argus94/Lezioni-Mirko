@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<form action="dati.php" method="get">
+<fieldset>
+<legend>dati essensiali</legend>
+<label for="nome">nome:<br>
+<input type="text" maxlength="10" name="nome"></label><br>
+<label for="cognome">cognome:<br>
+<input type="text" maxlength="10" name="cognome"></label><br>
+<label for="data">data di nascita:<br>
+<input type="date" name="data"></label><br>
+<label for="email">email:<br>
+<input type="email" name="email"></label><br>
+<label for="citta">citta:<br>
+<input type="text" name="citta"></label>
+</fieldset>
+<fieldset>
+<legend>abitudini</legend>
+preferenze:<br>
+<input type="radio" name="sport"><label for="sport">sport</label>
+<input type="radio" name="videogames"><label for="videogames">videogames</label>
+<input type="radio" name="cucina"><label for="cucina">cucina</label>
+<input type="radio" name="pittura"><label for="pittura">pittura</label><br>
+<p>
+tempo libero:<br>
+<input type="checkbox" name="8-10"><label for="8-10">8-10</label>
+<input type="checkbox" name="10-12"><label for="10-12">10-12</label>
+<input type="checkbox" name="12-14"><label for="12-14">12-14</label>
+<input type="checkbox" name="14-16"><label for="14-16">14-16</label>
+<input type="checkbox" name="16-18"><label for="16-18">16-18</label>
+<input type="checkbox" name="18-20"><label for="18-20">18-20</label>
+</p>
+<p><label for="dispositivi">quali sono i dispositivi in tuo possesso:<br>
+<select name="dispositivi">
+<option value="telefoni">telefoni</option>
+<option value="televisore">televisore</option>
+<option value="notebook">notebook</option>
+<option value="personalc">personal computer</option>
+<option value="console">console</option>
+</select>
+</label></p>
+<p>
+<label for="immaginedispositivo">carica l'immaggine del dispositivo che usi di piu:<br>
+<input type="file" name="allegato"></label>
+</p>
+<p>inserisci un commento:<br>
+<textarea name="commento" cols="30" rows="10">inserisci qui il tuo commento</textarea>
+</p>
+</fieldset>
+</form>
+</body>
+</html>
