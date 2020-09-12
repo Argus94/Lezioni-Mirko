@@ -1,0 +1,17 @@
+body {
+    background-color: #ff6b6b;
+}
+
+.font1 {
+    color: #f7fff7;
+    font-family: 'Oswald', sans-serif;
+}
+
+.font2 {
+    color: #f7fff7;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}

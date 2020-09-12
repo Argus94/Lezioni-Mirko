@@ -101,7 +101,7 @@
 <input type="image" src="img/icon-a.png">
 </div>
 <h2 class="testo1">Etichette per i controlli del modulo <br> &lt;label&gt; &lt;fieldset&gt; &lt;legend&gt;</h2>
-<p class="testo1">Quando sono stati introdotti i moduli si metteva del semplice testo accanto ad ognuno di essi, come abbiamo fatto noi. <br>
+<p class="testo1">Quando sono stati introdotti i moduli si metteva del semplice testo accanto ad ognuno di essi. <br>
 Con l'introduzione del tag &lt;label&gt; le cose sono cambiate, viene così usato per identificare ogni modulo. Rende il codice più chiaro ed è supportato
 dai programmi utilizzati da chi ha difficoltà visive. <br>
 Può essere usato in due modi:
@@ -109,6 +109,17 @@ Può essere usato in due modi:
     <li>Per racchiudere sia la descrizione testuale che l'elemento di input del modulo</li>
     <li>Per indicare il modulo di controllo a cui fa riferimento utilizzando l'attributo for</li>
     </ol>
+L'attributo for, in combinazione con l'id, viene anche utilizzato per estendere l'area di selezione anche all'etichettà, per quanto riguarda radio button e checkbox.<br>
+Esempio:<br>
+<label for="scelta1">Scelta1: <input type="radio" id="scelta1" name="scelte"></label>
+<label for="scelta2">Scelta2: <input type="radio" id="scelta2" name="scelte"></label>
+<label for="scelta3">Scelta3: <input type="radio" id="scelta3" name="scelte"></label><br>
+Per quanto riguarda i radiobutton è importante ricordarsi di dare uno stesso name per 2 motivi:
+<ol>
+<li>Perchè il server non riceverebbe correttamente la risposta</li>
+<li>Perchè i radiobutton non funzionerebbero e sarebbe possibile mettere la spunta in tutte le scelte, cosa che non dovrebbe accadere.</li>
+</ol>
+    
 </p>
   </body>
 </html>
