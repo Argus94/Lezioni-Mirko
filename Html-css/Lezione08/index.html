@@ -5,6 +5,23 @@
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
 <title>Lezione 8</title>
+<!-- l'attributo name può assumere qualsiasi nome, come anche content, serve a dare informazioni aggiuntive sulla pagina.
+Ci sono meta che vengono utilizzati di più e sono i seguenti:-->
+<meta name="description" content="Una lezione sull'html">
+<!-- description permette di fornire una descrizione della pagina-->
+<meta name="keywords" contet="lezioni, html, css, 8, tag, attributi, input, iframe">
+<!-- Keywords permette di definire delle parole chiave-->
+<meta name="robots" content="nofollow">
+<!--robots permette di comunicare ai motori di ricerca se devono aggiungere o meno questa pagina ai loro risultati.
+noindex comunica che questa pagina non deve essere aggiunta, nofollow comunica che deve essere aggiunta ma non devono essere inseriti i link al suo interno tra le ricerche-->
+
+<!--Nel meta viene anche utilizzato l'attributo http-equiv, utilizzato insieme a content-->
+<meta http-equiv="author" content="Marco Oliveri">
+<!--Per indicare l'autore della pagina.-->
+<meta http-equiv="pragma" content="nocache">
+<!--Impedisce al browser di attivare la gestione cache della pagina, ovvero di memorizzarla localmente per risparmiare tempo nelle visite successive-->
+<meta http-equiv="expires" content="Fri, 04 Apr 2024 23:59:59 GMT">
+<!--L'opzione expires indica se la pagina ha una scadenza e che quindi non deve essere più salvata in cache. La data deve essere specificata in questo formato.-->
 </head>
 <body>
     <h1 class="font1">Lezione 8 - Parte 1</h1>
@@ -13,10 +30,25 @@
     Iframe è l'abbreviazione di <b>Inline Frame</b>. <br> Ad esempio:</p>
 <div class="frame">
 <iframe src="../Lezione07/index.html" frameborder="0" width="600px" height="600px"></iframe>
-</div><p class="font2">Citando alcuni attributi:
-L'attributo scrolling non è più supportato da HTML5, ma dai suoi precedenti, si decideva se dare o meno le barre di scorrimento ad un iframe
-L'attributo frameborder non è più supportato da HTML5, //, permetteva di incidare il margine o meno di un frame, 0 era assenza di margine, 1 la sua presenza.-->
-</p>
+</div><p class="font2">Citando alcuni attributi: <br> 
+<ul class="font2">
+<li>L'attributo <b>scrolling</b>, obsoleto per l'html5, si usa il css, si decide se dare o meno le barre di scorrimento ad un iframe</li> 
+<li>L'attributo <b>frameborder</b> obsoleto per l'html5, //, permette di incidare il margine o meno di un frame, 0 era assenza di margine, 1 la sua presenza.</li> 
+<li>L'attributo <b>seamless</b> permette di rimuovere le barre di scorrimento</li></p>
+
+<h2 class="font1">I metadati</h2>
+<p>I metadati si scrivono nel tag head, nella testa, non è quindi visibile agli utenti ma svolge diversi compiti, non prevede un tag di chiusura. <br>
+Gli attributi più utilizzati sono: <br>
+<ul>
+<li><b>name:</b> indica la proprietà</li>
+<li><b>content:</b> il valore di questa proprietà</li>
+</ul>
+Esempi in head</p>
+<h2 class="font1">I codici di escape</h2>
+<div class="frame"><iframe src="../Lezione05/index.html#codici"  width="600px" height="200px" scrolling="no">
+<!--Da notare come con l'iframe ho preso una porzione di pagina della lezione 5 ed ho tolto le barre di scrolling.-->
+</div>
+
 </body>
 
 </html>

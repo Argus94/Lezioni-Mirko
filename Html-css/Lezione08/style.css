@@ -19,3 +19,7 @@ h1 {
     margin: auto;
     text-align: center;
 }
+.frame iframe {
+  overflow:hidden; 
+  border-width: 0;
+}
