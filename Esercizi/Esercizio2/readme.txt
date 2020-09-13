@@ -8,7 +8,7 @@ Home si dovrà collegare a index.html.
 gallery a gallery.html
 profilo a profile.html
 unsplash ad http://www.unsplash.com
-La lista non deve avere le voci a scorrere ma l'una accanto all'altra, per farlo, creare un id di nome menu e inserire questo:
+La lista non deve avere le voci a scorrere ma l'una accanto all'altra, per farlo, creare un id di nome "menu" e inserire questo:
 
     #menu {   
         list-style-type:none;  

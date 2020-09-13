@@ -4,11 +4,64 @@
 <head>
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
-<title>Lezione 8</title>
+<title>Lezione 9</title>
 </head>
 <body>
     <h1 class="font1">Lezione 9</h1>
-    <h2 class="font1"></h2>
+    <h2 class="font1">Il tag &lt;video&gt;</h2>
+    <p class="font2">L'elemento &lt;video&gt; è stato introdotto di recente nell'html5, per questo è compatibile sono con i browser più recenti.<br>
+    Per quanto riguarda i formati video di solito vengono utilizzati:</p>
+    <ul class="font2 lista">
+    <li>H264 per IE e Safari</li>
+    <li>WebM per Android, Chrome, Firefox e Opera</li>
+    </ul>
+    <p class="font2">Ogni browser fornisce i suoi controlli per il player. Gli attributi utilizzati per questo tag sono i seguenti:</p>
+    <ul class="font2">
+    <li><b>preload</b>: Dice al browser cosa fare mentre carica la pagina, può assumere 3 valori.
+    <ul>
+    <li><b>none</b>: Il browser non deve caricare il video finchè l'utente non clicca su play</li>
+    <li><b>auto</b>: Il browser scarica il video durante il caricamento della pagina.</li>
+    <li><b>metadata</b>: Il browser raccoglie dati sul video, dimensioni, primo frame, durata.</li>
+    </ul></li>
+    <li><b>poster</b>: Consente di specificare un'immagine di anteprima. </li>
+    <li><b>controls</b>: Indica al browser di mostrare i suoi controlli per la gestione del video.</li>
+    <li><b>autoplay</b>: Il file viene avviato automaticamente.</li>
+    <li><b>loop</b>: La riproduzione del video dovrà ricominciare da capo terminata la riproduzione.</li>
+    </ul>
+    <p class="font2">Per specificare il file, in più formati, da riprodurre si usa l'elemento &lt;source&gt; che presenta i seguenti attributi:</p>
+    <ul class="font2">
+    <li><b>src</b>: Specifica il percorso del video, si può anche inserire l'src nel tag video</li>
+    <li><b>type</b>: Comunica al browser il formato del video, altrimenti dovrà scaricare una parte di video per vedere se è in grado di riprodurlo, porterebbe ad uno spreco di tempo.</li>
+    </ul>
+    <p class="font2">Esempio di seguito:</p>
+    <video src="https://www.sample-videos.com/video312/mp4/720/big_buck_bunny_720p_1mb.mp4" width="560px" height="315px" controls preload="auto">
+    </video>
+    <p class="font2">Per incorporare un video da youtube invece basta cliccare su condividi/incorpora e prendere il codice Iframe</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/pPvyzXaFWJM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2 class="font2">Il tag &lt;audio&gt;</h2>
+<p class="font2">Permette di riprodurre brani musicali, gli attributi che si utilizzano:</p>
+<ul class="font2">
+<li><b>src</b>: Specifica il percorso del file audio.</li>
+<li><b>controls</b>: Stessa cosa come nel tag video, comunica al browser di utilizzare i suoi controlli per la gestione del file.</li>
+<li><b>autoplay</b>: Riproduce automaticamente il brano.</li>
+<li><b>preload</b>: Quando non è impostato in autoplay si utilizzano gli stessi valori dell'attributo preload nel tag video.</li>
+<p class="font2">Il tag &lt;source&gt; si utilizza per specificare molteplici file audio, serve per coprire i problemi di compatibilità dei browser. <br>Esempio di seguito:</p>
+<audio src="https://sampleswap.org/samples-ghost/DRUM%20LOOPS%20and%20BREAKS/000%20to%20080%20bpm/1536[kb]055_brain-broken-skank.wav.mp3" controls></audio>
+</ul>
+<h2 class="font2">Il tag &lt;area&gt;</h2>
+<p class="font2">Il tag area definisce un'area all'interno di un'immagine con cui è possibile interagire.<br>
+Per trovare le coordinate di un'immagine è possibile affidarsi a siti come <a href="https://www.image-map.net/">questo</a>.<br>
+Ecco un esempio: </p>
+<img src="img/comp.png" usemap="#image-map">
+
+<map name="image-map">
+    <area target="_blank" alt="Schermo" title="Schermo" href="https://www.amazon.it/Philips-Monitor-223V5LHSB2-Desktop-Attacco/dp/B012CZ6GO4/ref=sr_1_6?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;dchild=1&amp;keywords=schermo+lcd&amp;qid=1600017495&amp;sr=8-6" coords="1142,649,486,179" shape="rect">
+    <area target="_blank" alt="Desktop" title="Desktop" href="https://www.amazon.it/DESKTOP-GRAFICA-WINDOWS-ASSEMBLATO-COMPLETO/dp/B08CRZWXV7/ref=sr_1_1_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;dchild=1&amp;keywords=pc+fisso&amp;qid=1600017632&amp;sr=8-1-spons&amp;psc=1&amp;spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEySUM2SkFSSkJMQ0FMJmVuY3J5cHRlZElkPUEwMDI3NzM1MVA3Vlg2SzNDVVdHUiZlbmNyeXB0ZWRBZElkPUEwMzc2MjA2MjJJTU1GREczT0FXUSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=" coords="406,878,111,893,15,779,17,279,109,179,405,192" shape="poly">
+    <area target="_blank" alt="Tastiera" title="Tastiera" href="https://www.amazon.it/Logitech-Tastiera-Layout-Italiano-QWERTY/dp/B004APAH40/ref=sr_1_5?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;dchild=1&amp;keywords=tastiera&amp;qid=1600017688&amp;sr=8-5" coords="431,820,470,932,1297,889,1298,860,1209,792" shape="poly">
+    <area target="" alt="Mouse" title="Mouse" href="https://www.amazon.it/Logitech-programmabili-regolabili-regolazione-bilanciamento/dp/B07GS6ZB7T/ref=sr_1_2?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;dchild=1&amp;keywords=mouse+logitech&amp;qid=1600017755&amp;sr=8-2" coords="1309,826,1363,789,1445,785,1486,817,1491,853,1448,865,1324,845" shape="poly">
+</map>
+
 </body>
 
 </html>
