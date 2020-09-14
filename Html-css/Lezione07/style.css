@@ -131,6 +131,20 @@ body {
     margin: auto;
     /* Ricordarsi sempre di dare il margine automatico quando si vuole allineare il testo al centro */
 }
+
+
+
+.contenitore2 {
+    text-align: center;
+    margin: auto;
+}
+.contenitore2 ul {
+    text-align: justify;
+    margin: auto;
+}
+p {
+    margin-left: 2px !important;
+}
 /* Il codice quà sotto è valido solo per dispositivi con una larghezza massima di schermo di 700px */
 @media only screen and (max-width: 700px) {
     .card2 {

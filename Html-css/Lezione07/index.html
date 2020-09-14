@@ -121,5 +121,71 @@ Per quanto riguarda i radiobutton è importante ricordarsi di dare uno stesso na
 </ol>
     
 </p>
+<div class="contenitore2">
+<h2 class="testo1">L'elemento &lt;datalist&gt;</h2>
+L'elemento &lt;datalist&gt; specifica una lista di opzioni predefinire per un elemento &lt;input&gt;. <br>Ad esempio:
+  <form class="form1" action="/action_page.php">
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+</div>
+<div class="contenitore2">
+<h2 class="testo1">L'elemento &lt;output&gt;</h2>
+<form action="/action_page.php"
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+<p>Per processare questo dato serve una pagina php, da spiegare poi più avanti.</p>
+</div>
+<div class="contenitore2">
+<h2 class="testo1">L'elemento &lt;optgroup&gt;</h2>
+<p>Esso è legato al tag &lt;select&gt;. Permette di creare dei gruppi tra le varie scelte.</p>
+<label for="cars">Scegli una macchina:</label>
+<select  name="cars" id="cars">
+  <optgroup label="Macchine svedesi">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+  </optgroup>
+  <optgroup label="Macchine tedesche">
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </optgroup>
+</select>
+</div>
+<div class="contenitore2">
+<h2 class="testo1">Alcuni approfondimenti sul tag &lt;select&gt;</h2>
+
+<p>Esistono altri attributi legati a questo tag che possono tornare utili. <br>Tra questi abbiamo:</p>
+<ul>
+<li><b>multiple</b>: Permette di selezionare più opzioni</li>
+<li><b>required</b>: Lo rende un elemento necessario per la compilazione del form</li>
+<li><b>size</b>: Definisce il numero di elementi visibili nella lista a tendina</li>
+<li><b>form</b>: Permette di indicare a quale form è legato.</li>
+</ul>
+<p></p>
+<label for="cars">Esempio di multiple: Scegli</label><br>
+
+<select name="cars" id="cars" multiple>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="opel">Opel</option>
+  <option value="audi">Audi</option>
+</select>
+<p>Per farlo funzionare bisognerebbe informare l'utente che è possibile compiere più scelte tramite la combinazione dei tasti CTRL + click mouse, per questo è più user friendly utilizzare le checkbox in questi casi.</p>
+</div>
   </body>
 </html>

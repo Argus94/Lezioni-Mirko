@@ -19,3 +19,15 @@ h1 {
 .lista {
     list-style-type: none;
 }
+
+.contenitore {
+    background-image: url(img/vpw.jpg);
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 300px;
+}
+
+.contenitore h2 {
+    text-align:center;
+    font-size: 30px;
+}
