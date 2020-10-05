@@ -15,3 +15,52 @@ body {
 h1 {
     text-align: center;
 }
+
+h1, h2, h3, h4, h5, h6 {
+color: #f7fff7;
+font-family: 'Roboto', sans-serif;
+}
+
+p {
+    color: #f7fff7;
+    font-family: 'Oswald', sans-serif;
+}
+
+.voices {
+    color: #f7fff7;
+    font-family: 'Oswald', sans-serif;
+    list-style-type: disc;
+}
+
+.voicesgrid {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+}
+
+.ulgrid {
+    columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+.voices a {
+    color:#f7fff7;
+}
+table tr {
+    color: white;
+}
+
+.skills {
+    width: 100px;
+    margin: 0;
+    height: auto;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.box {
+    background-color: white;
+    width: 300px;
+    height: auto;
+}

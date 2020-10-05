@@ -29,6 +29,8 @@
     /* Stile del font */
     font-style: bold;
     color: #ffffff;   
+    background-image: url(img/wallpaper.jpg);
+    height: 600px;
 }
 /*Questa classe, con le sue proprietà, mi permette di posizionare il testo in posizione assoluta:
 Posiziona l'elemento rispetto (o sopra) al suo elemento contenitore. Viene estratto dal suo flusso standard
@@ -111,6 +113,8 @@ margin-bottom: 2px;
 position:relative;
 width: 100vw;
 z-index: -1;
+}
+
 }
 
 .box3 {

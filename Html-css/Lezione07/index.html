@@ -7,7 +7,6 @@
   </head>
   <body>
   <div class="box2">
-  <img class="image" src="img/wallpaper.jpg" alt="">
     <div class="centered">Lezione 7<br>Moduli parte 2</div>
     </div>
     <h2 class="font3">Riepilogo dei controlli del tag input</h2>
@@ -71,9 +70,9 @@
 <div class="card2">
 <h2>input di scelta singola</h2>
 <input type="radio" name="scelta1" checked="checked">
-<input type="radio" name="scelta2">
-<input type="radio" name="scelta3">
-<input type="radio" name="scelta4">
+<input type="radio" name="scelta1">
+<input type="radio" name="scelta1">
+<input type="radio" name="scelta1">
 </div>
 <div class="card2">
 <h2>Input di scelta multipla</h2>
@@ -92,7 +91,7 @@
 </div>
     <div class="card2">
 <h2>Pulsante di invio <br>del modulo</h2>
-<input type="submit" name="invio" value="Invia">
+<input type="submit" name="documento" value="Invia">
 <!--L'attributo name qui non è obbligatorio-->
 <!--L'attributo value viene utilizzato per controllare il testo nel pulsante-->
 </div>
@@ -111,9 +110,9 @@ Può essere usato in due modi:
     </ol>
 L'attributo for, in combinazione con l'id, viene anche utilizzato per estendere l'area di selezione anche all'etichettà, per quanto riguarda radio button e checkbox.<br>
 Esempio:<br>
-<label for="scelta1">Scelta1: <input type="radio" id="scelta1" name="scelte"></label>
-<label for="scelta2">Scelta2: <input type="radio" id="scelta2" name="scelte"></label>
-<label for="scelta3">Scelta3: <input type="radio" id="scelta3" name="scelte"></label><br>
+<label for="scelta1">Scelta1: <input type="radio" id="form1" name="scelte" value="scelta1"></label>
+<label for="scelta2">Scelta2: <input type="radio" id="form1" name="scelte" value="scelta2"></label>
+<label for="scelta3">Scelta3: <input type="radio" id="form1" name="scelte" value="scelta3"></label><br>
 Per quanto riguarda i radiobutton è importante ricordarsi di dare uno stesso name per 2 motivi:
 <ol>
 <li>Perchè il server non riceverebbe correttamente la risposta</li>
@@ -139,14 +138,21 @@ L'elemento &lt;datalist&gt; specifica una lista di opzioni predefinire per un el
 <div class="contenitore2">
 <h2 class="testo1">L'elemento &lt;output&gt;</h2>
 <form action="/action_page.php"
-oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+oninput="x.value=parseInt(a.value)+parseInt(b.value)+parseInt(c.value)+parseInt(d.value)"> 
   0
   <input type="range" id="a" name="a" value="50">
   100 +
   <input type="number" id="b" name="b" value="50">
+  <input type="checkbox" value="200" id="c" name="c">
+  
   =
-  <output name="x" for="a b"></output>
+  <output name="x" for="a b c"></output>
   <br><br>
+  <form action="esempio.php" oninput="y.value=parseInt(p.value)+parseInt(f.value)">
+  <input type="text" name="p" id="p">
+  <input type="text" name="f" id="f">
+<output name="y" for="p f"></output>
+  </form>
   <input type="submit">
 </form>
 <p>Per processare questo dato serve una pagina php, da spiegare poi più avanti.</p>

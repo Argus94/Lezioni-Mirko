@@ -7,8 +7,158 @@
 <title>Lezione 8</title>
 </head>
 <body>
-    <h1 class="font1">Lezione 10</h1>
-    <h2 class="font1">Il tag &lt;picture&gt;</h2>
+    <h1>Lezione 10 - Revisione Tags HTML - Introduzione al CSS</h1>
+    <p>Innanzitutto è possibile trovare tutti i tag html scrivendo su google HTML element mdn o w3school. Oppure collegandosi a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">questo link</a>, o a <a href="https://docs.emmet.io/cheat-sheet/">questo</a>.<br>
+    A seguire: Analisi dei singoli tag e di quelli mancanti.
+    </p>
+    <h2>Momento di installare tools per atom</h2>
+    <div class="voicesgrid">
+        <ul class="voices">
+            <li>atom-beautify</li>
+            <li>atom-ternjs</li>
+            <li>autoclose-html</li>
+            <li>emmet</li>
+            <li>csslint</li>
+            <li>pigments</li>
+            <li>language-ejs</li>
+        </ul>
+        <ul class="voices">
+            <li>atom-html-preview</li>
+            <li>Sublime-Style-Column-Selection</li>
+            <li>linter-eslint</li>
+        </ul>
+    </div>
+    <h2>A quali siti fare affidamento</h2>
+    <p>I siti più importanti da salvarsi nella propria barra dei bookmarks sono i seguenti:</p>
+    <ul class="voices ulgrid">
+    <!-- Da analizzare sono ulgrid e voicesgrid, stesso risultato ma differenti.-->
+        <li><a href="https://devdocs.io/">Devdocs</a></li>
+        <li><a href="https://pixabay.com/it/">Pixabay</a></li>
+        <li><a href="https://hackerthemes.com/bootstrap-cheatsheet/#input-group-prepend">Bootstrap 4 cheatsheet</a></li>
+        <li><a href="https://hackerthemes.com/bootstrap-themes/demo/default/">Bootstrap 4 tool</a></li>
+        <li><a href="https://developer.mozilla.org/it/">MDN</a></li>
+        <li><a href="https://colorhunt.co/">Color Hunt</a></li>
+        <li><a href="https://codepen.io/">Codepen</a></li>
+        <li><a href="https://stackoverflow.com/">Stackoverflow</a></li>
+        <li><a href="https://codepen.io/">Codier</a></li>
+        <li><a href="https://codepen.io/">FontAwesome</a></li>
+        <li><a href="https://codepen.io/">Emojipedia</a></li>
+        <li><a href="https://codepen.io/">CSStricks</a></li>
+        <li><a href="http://web.archive.org/">Wayback Machine</a></li>
+        
+    </ul>
+    <h2>&lt;i&gt; vs &lt;em&gt; -  &lt;b&gt; vs &lt;strong&gt;</h2>
+    
+    <p> La differenza importante sta nel fatto che &lt;i&gt; dà solo lo stile italic, &lt;em&gt; invece dà, oltre all'italic anche un significato di enfasi al testo, lo enfatizza.
+    Stesso discorso vale per &lt;b&gt; e &lt;strong&gt;, uno dà solo lo stile, l’altro, oltre a dare il grassetto, fornisce pure un significato di forte importanza.
+</p>
+  <h2>Cos'è l'identantion e perchè è importante</h2>  
+  <p>L'identantion o identazione è quel processo che sistema i vari elementi per ordine di importanza. Quando parliamo di lista e sottolista, ad esempio, i vari elementi di queste liste, comunemente vengono identate, ovvero vengono disposte da sinistra verso destra, in posizioni variabili in base all'importanza. <br>
+  Si può attuare un'identazione con il plugin per atom che si chiama atom-beautify.<br> Perchè è importante? L'identazione del codice permette di individuare facilmente ad occhio quali elementi sono inclusi in certi tag e come essi si ramificano. Risulta quindi essenziale identare il codice quando si ha una pagina troppo complessa.</p>
+<h2>Altre tips sul tag table</h2>
+<p>Table come abbiamo già visto, permette di creare una tabella con i relativi tag interni, tr, th, td. <br>
+Table permette non solo di inserire i dati, ma anche di incolonnarli, creando ad esempio un profilo con le proprie skills, come questo:</p>
+<table>
+    <tr>
+    <th>Javascript</th>
+    <td>⭐️⭐️⭐️⭐️</td>
+    </tr>
+    <tr>
+    <th>HTML5</th>
+    <td>⭐️⭐️⭐️⭐️⭐️</td>
+    </tr>
+    <tr>
+    <th>CSS</th>
+    <td>⭐️⭐️⭐️⭐️⭐️</td>
+    </tr>
+    <tr>
+    <th>PhP</th>
+    <td>⭐️⭐️⭐️</td>
+    </tr>
+</table>
+<p>Con le tabelle quindi è possibile fare di tutto, come ad esempio, innestare una tabella in una tabella.</p>
+<table>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td>
+                    Ex 1.1
+                    </td>
+                    <td>
+                    Ex 1.2
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Ex 2.1
+                    </td>
+                    <td>
+                    Ex 2.2
+                    </td>
+                </tr>
+            </table>
+        </td>
+</tr>
+<tr>
+        <td>
+            <table>
+                <tr>
+                    <td>
+                    Ex 2.1
+                    </td>
+                    <td>
+                    Ex 2.2
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Ex 2.1
+                    </td>
+                    <td>
+                    Ex 2.2
+                    </td>
+                </tr>
+            </table>
+        </td>
+</tr>
+</table>
+<h2>Quindi perchè il CSS è importante?</h2>
+<p>Quando ancora non esisteva il css la maggior parte degli oggetti venivano disposti su schermo tramite l'uso delle tabelle ed ecco che si venivano a creare tabelle infinite dove il rischio di sbagliare era molto alto, il codice diventava infinitamente lungo e si appesantiva inutilmente la pagina.
+Ecco che una delle esigenze che ha portato alla nascita del CSS è stata proprio quella di snellire il codice. <br>
+Oggi quindi si è iniziato ad adottare il css o cascading style sheet, che permette di dare un layout ed uno stile complesso e più dettagliato senza il rischio di andare a scrivere pagine lunghissime di codice html, racchiudendo tutti in classi con all’interno le varie proprietà con i corrispondenti valori, che successivamente vengono richiamati dalla pagina html tramite classi, id o gli stessi tag.</p>
+<h2>Come si deve studiare il CSS</h2>
+<p>Il CSS non è come l'HTML, non sono come i tag, pochi e specifici. <br>
+Il fattore chiave per saper usare il CSS è sfruttare il web, i motori di ricerca, ed impararlo ad utilizzare con la pratica. <br>
+Questo processo si può spiegare con un esempio:</p>
+<div class="box"> <p style="color: black;">Voglio rendere questo div di colore verde, come faccio?</p></div>
+<p>Vado su google e cerco "div colored mdn, o background color div, o changing background color" il primo risultato che uscirà sarà proprio la proprietà css di qui avrò bisogno, ovvero background-color"</p>
+<div class="box" style="background-color:green;"> <p>Ed ecco che aggiungendo la proprietà che ho cercato, mostra il colore di cui ho bisogno.</p> </div>
+<p>Una delle più importanti skill di uno sviluppatore è quella di riuscire ad uscire fuori da una situazione di stasi attraverso le giuste ricerche tramite motori di ricerca e documentations online. Quindi, quando si è bloccati, bisogna cercare ed utilizzare internet il più possibile, cosa quindi importante l’inglese!</p>
+
+<h2>La struttura del CSS</h2>
+<p> Come ben sappiamo in un foglio di stile troviamo questo format testuale:</p>
+<div style="background-color: #423144; width: 300px; height: 100px; display: flex; align-items: center; justify-content:center;">
+<p class="font2" style="font-size: 20px;"><strong style="color:#e8505b">Selettore</strong> <strong>&#123;</strong> <strong style="color:#df5e88">Proprietà: </strong> <strong style="color:#8fcfd1;">valore;</strong> <strong>&#125</strong></p>
+</div>
+<ul class="font1" style="list-style-type: none; padding: 0;">
+<li>Il <strong>selettore</strong> risponde alla domanda <strong>"Who?"</strong> ovvero a chi stiamo facendo riferimento.</li>
+<li>La <strong>proprietà</strong> risponde alla domanda <strong>"What?"</strong> con cosa stiamo risponendo.</li>
+<li>Il <strong>valore</strong> risponde alla domanda <strong>"How?"</strong> ovvero come stiamo rispondendo.</li>
+</ul>
+<p>Perché è importante rispettare la punteggiature? Se andiamo a rimuovere i 2 punti, non si riuscirà a distinguere il cosa dal come; 
+<br>Se dimentichi il punto e virgola, Non si potrà distinguere il come della precedente proprietà, dal “cosa” della successiva.<br>
+PS: È buon uso mettere i vari selettori in ordine alfabetico.
+</p>
+<h2>Il debugging e l'ordine di stile</h2>
+<p>Il debugging è la classica operazione di revisione per togliere eventuali errori detti in inglese bug. <br>
+Il debugging quindi è importante per fixare i bug presenti nelle pagine. Per riconoscere possibili bug è necessario aprire la console su chrome o firefox e vedere che errore viene riportato, dopo di che bisogna imparare a leggerli. Basta cercarli se non si capiscono.
+<br>Oltre agli errori nella console, sono anche presenti errori di css anche detti <strong>errori di priorità</strong>. Infatti se dovessimo inserire un parametro css in un foglio di stile esterno e successivamente inserire un parametro css dentro il foglio html, quello dentro quest’ultimo avrà la priorità e sovrascriverà quello nel foglio di stile. <br>
+L'ordine di priorità quindi è importantissimo poichè un parametro uguale invaliderebbe l'altro in ordine gerarchico. Per questo quando si importa un parametro da un foglio css utilizzato per più pagine e si vuole portare qualche accorgimento, si attuano delle modifiche in pagina html.</p>
+<div style="background-color: #423144; width: 500px; height: 100px; display: flex; align-items: center; justify-content:center;">
+<p class="font2" style="font-size: 20px;"><strong style="color:#e8505b">Priorità</strong> <strong>&#58;</strong> <strong style="color:#df5e88">inline-css </strong><strong>-></strong> <strong style="color:#8fcfd1;">tag-css</strong> <strong>-></strong><strong style="color:#8fcfd1;">external-css</strong></p>
+</div>
+<ul class="font1" style="list-style-type: none; padding: 0;">
 </body>
 
 </html>

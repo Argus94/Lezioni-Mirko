@@ -29,14 +29,25 @@ noindex comunica che questa pagina non deve essere aggiunta, nofollow comunica c
     <p class="font2">L'Iframe è come una finestra ritagliata all'interno di una pagina. All'interno di essa si può vedere un'altra pagina.<br>
     Iframe è l'abbreviazione di <b>Inline Frame</b>. <br> Ad esempio:</p>
 <div class="frame">
-<iframe src="../Lezione07/index.html" frameborder="0" width="600px" height="600px"></iframe>
+<iframe src="../Lezione07/index.html" frameborder="10px" width="600px" height="600px" allowfullscreen></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3138.9756893091703!2d13.361144615483763!3d38.11749997969854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1319e5f4eaa16347%3A0xca25375523ef5b64!2sTaverna%20Azzurra!5e0!3m2!1sit!2sit!4v1601042598144!5m2!1sit!2sit" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </div><p class="font2">Citando alcuni attributi: <br> 
 <ul class="font2">
 <li>L'attributo <b>scrolling</b>, obsoleto per l'html5, si usa il css, si decide se dare o meno le barre di scorrimento ad un iframe</li> 
 <li>L'attributo <b>frameborder</b> obsoleto per l'html5, //, permette di incidare il margine o meno di un frame, 0 era assenza di margine, 1 la sua presenza.</li> 
-<li>L'attributo <b>seamless</b> permette di rimuovere le barre di scorrimento</li></p>
+<li>L'attributo <b>seamless</b> permette di rimuovere le barre di scorrimento</li></ul></p>
 <p>è possibile anche pubblicare un pdf tramite tag iframe.</p>
 <iframe src="doc.pdf" frameborder="0" width="600px" height="600px"></iframe>
+<h2 class="font1">Il layout di una pagina</h2>
+<p>I layout di una pagina variano in base allo scopo di quest'ultima <br>
+Di seguito alcuni dei <a href="https://www.crazyegg.com/blog/best-website-layouts/">layout più famosi</a> e <a hreft="https://www.pinterest.it/symoimo/creative-web-layout-inspiration/">ispirazioni per un layout</a><br>
+Il layout è importante perchè definisce la struttura di un programma o un sito in cui l'utente si andrà ad orientare.</p>
+<div class="grid">
+<img src="layouts/layout1.jpg" class="gridimages" alt="layout1">
+<img src="layouts/layout2.png" class="gridimages"  alt="layout2">
+<img src="layouts/layout3.jpg" class="gridimages"  alt="layout3">
+<img src="layouts/layout4.png" class="gridimages"  alt="layout4">
+<img src="layouts/layout5.jpg" class="gridimages" alt="layout5"></div>
 <h2 class="font1">I metadati</h2>
 <p>I metadati si scrivono nel tag head, nella testa, non è quindi visibile agli utenti ma svolge diversi compiti, non prevede un tag di chiusura. <br>
 Gli attributi più utilizzati sono: <br>
@@ -49,6 +60,7 @@ Esempi in head</p>
 <div class="frame"><iframe src="../Lezione05/index.html#codici"  width="600px" height="200px" scrolling="no">
 <!--Da notare come con l'iframe ho preso una porzione di pagina della lezione 5 ed ho tolto le barre di scrolling.-->
 </div>
+
 
 </body>
 
